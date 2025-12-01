@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("../fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Markazi Text";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../fonts/MarkaziText-VariableFont_wght.ttf") format("truetype");
+}
+
+@theme {
+  --font-markazi: "Markazi Text", sans-serif;
+  --font-manrope: "Manrope", sans-serif;
+  --animate-fade-up: fade-up 0.8s ease-out forwards;
+  --animate-slide-out-up: slide-out-up 0.5s ease-in forwards;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(400px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes slide-out-up {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-100vh);
+    }
+  }
+}

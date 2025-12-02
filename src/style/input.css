@@ -14,6 +14,15 @@
   font-display: swap;
   src: url("../fonts/MarkaziText-VariableFont_wght.ttf") format("truetype");
 }
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
 
 @theme {
   --font-markazi: "Markazi Text", sans-serif;

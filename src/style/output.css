@@ -256,6 +256,9 @@
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
   }
+  .mt-21 {
+    margin-top: calc(var(--spacing) * 21);
+  }
   .mt-22 {
     margin-top: calc(var(--spacing) * 22);
   }
@@ -340,6 +343,9 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
@@ -351,6 +357,9 @@
   }
   .w-14 {
     width: calc(var(--spacing) * 14);
+  }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
   }
   .w-\[18px\] {
     width: 18px;
@@ -517,6 +526,12 @@
   }
   .bg-\[url\(\'\.\.\/img\/bg\.svg\'\)\] {
     background-image: url('../img/bg.svg');
+  }
+  .bg-\[url\(\'\.\/src\/img\/bg\.svg\'\)\] {
+    background-image: url('./src/img/bg.svg');
+  }
+  .bg-\[url\(\'\/src\/img\/bg\.svg\'\)\] {
+    background-image: url('/src/img/bg.svg');
   }
   .bg-auto {
     background-size: auto;

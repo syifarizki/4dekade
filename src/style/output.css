@@ -570,6 +570,10 @@
   .font-markazi {
     font-family: var(--font-markazi);
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
   .text-base {
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
@@ -892,6 +896,12 @@
   .md\:px-18 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 18);
+    }
+  }
+  .md\:text-2xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
   }
   .md\:text-xl {
